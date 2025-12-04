@@ -10,6 +10,7 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 - Microsoft Entra ID (Azure Active Directory)
 - Microsoft 365 Admin Center
 - Microsoft Graph PowerShell
+- Microsoft Excel
 - Role-Based Access Control (RBAC)
 - Identity Lifecycle Management
 
