@@ -30,7 +30,7 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a **Global Administrator** using your Microsoft 365 admin credentials.  
 2. In the left-hand menu, expand **Identity → Users → All Users**.  
 3. Select **+ New user → Create new user**.
-1.png
+./1.png
 5. Provide the following:
    - **User principal name:** `ChrisG`
    - **Display name:** `Chris Green`
