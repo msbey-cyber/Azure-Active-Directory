@@ -66,7 +66,7 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 # 🧩 Exercise 2 – Assign Role and Create an Application
 
 ### **Task 1: Assign Application Administrator Role**
-1. As **Administrator** in the Entra admin center, navigate to **Identity → Users → All Users → Chris Green**. In the left-hand menu, select **Assigned Roles → + Add Assignments**.
+1. As **Administrator** in the Entra admin center, navigate to **Entra ID → Users → All Users → Chris Green**. In the left-hand menu, select **Assigned Roles → + Add Assignments**.
 ![descriptive alt text](./16.png)
 2. Choose the **Application Administrator** role from the dropdown.
 ![descriptive alt text](./17.png)
