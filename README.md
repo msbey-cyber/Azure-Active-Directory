@@ -1,6 +1,6 @@
 # Azure-Active-Directory
 
-This project documents focused on **managing users, roles, and licenses in Microsoft Entra ID (Azure Active Directory)**.  
+This project documents focus on **managing users, roles, and licenses in Microsoft Entra ID (Azure Active Directory)**.  
 
 The exercises demonstrate identity lifecycle management tasks including user creation, role assignment, bulk import operations, and license administration.
 
@@ -181,12 +181,12 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 # ✅ Summary
 Completed Tasks
 
-User creation (single via GUI and bulk via automation using PowerShell Graph modules),
-Role assignment (in GUI and PowerShell) and revocation,
-Account deletion and restoration,
-License assignment via Microsoft 365 Admin Center.
+User creation (single via GUI and bulk via automation using PowerShell Graph modules)<br>
+Role assignment (in GUI and PowerShell) and revocation<br>
+Account deletion and restoration<br>
+License assignment via Microsoft 365 Admin Center<br>
 These steps implement core IAM governance concepts aligned with enterprise Identity & Access Administration best practices.
 
-Author: Qadriyyah Abdullah [Ms Bey]
-Date: December 2025
+Author: Qadriyyah Abdullah [Ms Bey]<br>
+Date: December 2025<br>
 Tags: SC-300 AzureAD Microsoft Entra ID IdentityGovernance RoleManagement
