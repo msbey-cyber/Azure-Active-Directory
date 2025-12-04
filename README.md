@@ -70,62 +70,67 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 ![descriptive alt text](./16.png)
 2. Choose the **Application Administrator** role from the dropdown.
 ![descriptive alt text](./17.png)
-![descriptive alt text](./18.png)
-4. Under **Assignment Type**, mark **Active**, and use a justification like “Needed for lab.”
-![descriptive alt text](./19.png)
-5. Select **Assign**, then **Refresh** to confirm the new role assignment.  
+![descriptive alt text](./18.PNG)
+3. Under **Assignment Type**, mark **Active**, and use a justification like “Needed for lab.” and select **Assign**.
+![descriptive alt text](./19.PNG)
+4. Click **Refresh** to confirm the new role assignment.  
 ![descriptive alt text](./20.png)
 
 ### **Task 2: Verify New Role Permissions**
-1. Launch a new InPrivate browser session.  
-2. Sign in as **Chris Green** again.  
-3. Return to **Enterprise Applications** via search.  
-4. Confirm that **+ New Application** and **Create your own application** options are now available.  
-5. Sign out once verified.
+1. After launching a new In-Private browser session and signing in as **Chris Green** again, return to **Enterprise Applications** via search and confirm that **+ New Application** and **Create your own application** options are now available.
+![descriptive alt text](./21.png)
+![descriptive alt text](./22.png)
+2. Sign out again once verified.
 
 ---
 
 # 🧩 Exercise 3 – Remove the Assigned Role
 
 ### **Task 1: Remove the Application Administrator Role**
-1. Sign in as the **Administrator** again.  
-2. In the search bar, type **Roles and Administrators** and open it.  
-3. Select **Application Administrator** from the list.  
-4. On the **Assignments** page, locate **Chris Green**, select the checkbox beside the user, and choose **Remove**.  
-5. Confirm removal, then close the window.  
+1. After signing in as the **Administrator** again, typing **Roles and Administrators** in the search bar and and opening it, select **Application Administrator** from the list, then on the **Assignments** page, locate **Chris Green**, select the checkbox beside the user, and choose **Remove**.
+![descriptive alt text](./23.png)
+2. Confirm removal, then close the window.
 
 ---
 
 # 🧩 Exercise 4 – Bulk User Creation
 
 ### **Task 1: Bulk Creation Using CSV**
-1. From Entra ID, navigate to **Identity → Users → All Users**.  
-2. Select **Bulk Operations → Bulk Create**.  
-3. Download the provided **CSV template**.  
-4. Open the file and populate sample user details (e.g., name, username, and department).  
-5. Save the CSV with your tenant domain (e.g. `user1@<tenantname>.onmicrosoft.com`).  
-6. Upload the file back under the **Bulk Create** section and select **Submit**.  
-7. Confirm successful creation — new users should appear in the user list.
+1. From Entra ID, navigate to **Identity → Users → All Users**, then select **Bulk Operations → Bulk Create**.
+![descriptive alt text](./24.png)
+2. Download the provided **CSV template**.
+![descriptive alt text](./25.png)
+3. Open the file and populate sample user details (e.g., name, username, and department).
+![descriptive alt text](./26.png)
+4. Save the CSV with your tenant domain (e.g. `user1@notapplicable356.onmicrosoft.com`).  
+5. Upload the file back under the **Bulk Create** section and select **Submit**.
+![descriptive alt text](./27.png)
+6. Confirm successful creation — new users should appear in the user list.
+![descriptive alt text](./28.png)
 
 ### **Task 2: Bulk Creation Using PowerShell**
 1. Ensure **PowerShell version 7.2+** is installed.  
 2. Open PowerShell and install the Microsoft Graph module:
+![descriptive alt text](./29.png)
+![descriptive alt text](./30.png)
    ```powershell
    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
    Get-InstalledModule Microsoft.Graph
-3. Connect to Microsoft Graph:
+3. Connect to Microsoft Graph (after entering the command, log in with admin email under the link generated in PowerShell, along with the provided code; after successful login, "Welcome to Microsoft Graph!" message appears in PowerShell):
+![descriptive alt text](./31.png)
+![descriptive alt text](./32.png)
+![descriptive alt text](./33.png)
+![descriptive alt text](./34.png)
    ```powershell
    Connect-MgGraph -Scopes "User.ReadWrite.All"
-4. Define password policy:
+7. Define password policy:
+![descriptive alt text](./36.png)
    ```powershell
-   $PWProfile = @{
-    Password = "<Enter-Complex-Password>";
-    ForceChangePasswordNextSignIn = $false
-   }
-5. Create new user and assign role:
+   $PWProfile = @{ Password = "<Enter-Complex-Password>"; ForceChangePasswordNextSignIn = $false }
+8. Create new user and assign role:
    ```powershell
    New-MgUser -DisplayName "New PW User" -GivenName "New" -Surname "User" -MailNickname "newuser" -UsageLocation "US" -UserPrincipalName "newuser@<tenantname>.onmicrosoft.com" -PasswordProfile $PWProfile -AccountEnabled -Department "Research" -JobTitle "Trainer"
-6. Verify user creation:
+9. Verify user creation:
    ```powershell
    Get-MgUser
 
