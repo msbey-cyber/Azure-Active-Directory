@@ -181,10 +181,10 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 # ✅ Summary
 Completed Tasks
 
-User creation (single via GUI and bulk via automation using PowerShell Graph modules)
-Role assignment (in GUI and PowerShell) and revocation
-Account deletion and restoration
-License assignment via Microsoft 365 Admin Center
+User creation (single via GUI and bulk via automation using PowerShell Graph modules),
+Role assignment (in GUI and PowerShell) and revocation,
+Account deletion and restoration,
+License assignment via Microsoft 365 Admin Center.
 These steps implement core IAM governance concepts aligned with enterprise Identity & Access Administration best practices.
 
 Author: Qadriyyah Abdullah [Ms Bey]
