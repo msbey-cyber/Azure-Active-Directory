@@ -5,7 +5,7 @@
 ---
 
 ## 🧭 Objective
-Demonstrate how to govern user access in Microsoft Entra ID (Azure AD) by creating a catalog, defining access packages, adding resources, and configuring approval and expiration policies to automate the identity lifecycle.
+Demonstrate how to govern user access in Microsoft Entra ID (Azure AD) by creating a catalog, defining access packages, adding resources, and<br> configuring approval and expiration policies to automate the identity lifecycle.
 
 ---
 
@@ -113,16 +113,19 @@ Demonstrate how to govern user access in Microsoft Entra ID 
 ---
 
 ### 7️⃣ Review and Create
-Verify the summary page shows:
+Verify the summary page shows:<br>
+
 Basics
 - Name = DemoAccessPackage
 - Description = DemoAccessPackage
-- Catalog Name = Demo
+- Catalog Name = Demo<br>
+
 Resource roles
 - Resource (Project23; Microsoft Graph Command Line Tools)  
 - Type (Group and Team; Application) 
 - Sub Type (Microsoft 365 Group; Application) 
-- Role (Member; Default Access)
+- Role (Member; Default Access)<br>
+
 Requests
 - Who can get access = All members (excluding guests
 - Who can request access = Admin
@@ -130,14 +133,16 @@ Requests
 - Disable assignment emails = No
 - Enabled = Yes
 - Require requestor justification = Yes
-- How many stages = 1
+- How many stages = 1<br>
+
 First Approver
 - Approvers = Manager as approver ; Fallback(Ms Bey)
 ![descriptive alt text](./images/68.png)
 - Decision must be made in how many days? = 14
 - Require approver justification = No
 - Show approvers details to requestors (preview) = Default
-- If no action taken, forward to alternate approvers? = No
+- If no action taken, forward to alternate approvers? = No<br>
+
 Lifecycle
 - Access package assignments expire = After 365 days
 - Require access reviews = Yes
@@ -148,17 +153,18 @@ Lifecycle
 - Fallback reviewers = Ms Bey
 - If reviewers don't respond = No change
 - Show reviewer decision helpers = Yes
-- Require reviewer justification = Yes
-![descriptive alt text](./images/69.png)
+- Require reviewer justification = Yes<br>
 
-Click **Create**.  
+Click **Create**.
+![descriptive alt text](./images/69.png)
+  
 > ✅ The Access Package is provisioned and available in your tenant.  
 ![descriptive alt text](./images/70.png)
 
 ---
 
 ## ✅ Conclusion
-This lab provided comprehensive hands-on experience with configuring and managing Access Packages within Microsoft Entra ID (Azure AD) to simulate full identity lifecycle governance. We created a catalog, built an access package, and defined governance workflows for user requests, approvals, and role assignments across groups and enterprise applications. Expiration and access review policies were implemented to automate user offboarding and maintain compliance. Overall, this lab demonstrated practical, real-world skills required to govern user access at scale — aligning identity management with policy‑driven security and lifecycle automation best practices  
+This lab provided comprehensive hands-on experience with configuring and managing Access Packages within Microsoft Entra ID (Azure AD) to simulate full identity lifecycle governance. We created a catalog, built an access package, and defined governance workflows for user requests, approvals, and role assignments across groups and enterprise applications. Expiration and access review policies were implemented to automate user offboarding and maintain compliance. Overall, this lab demonstrated practical, real-world skills required to govern user access at scale — aligning identity management with policy‑driven security and lifecycle automation best practices.  
 
 ---
 
