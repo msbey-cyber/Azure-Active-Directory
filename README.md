@@ -187,6 +187,8 @@ Account deletion and restoration<br>
 License assignment via Microsoft 365 Admin Center<br>
 These steps implement core IAM governance concepts aligned with enterprise Identity & Access Administration best practices.
 
-Author: Qadriyyah Abdullah [Ms Bey]<br>
-Date: December 2025<br>
-Tags: SC-300 AzureAD Microsoft Entra ID IdentityGovernance RoleManagement
+---
+
+**Author:** *Qadriyyah Abdullah [Ms Bey]*  
+**Date:** *December 2025*  
+**Tags:** `SC‑300` `AzureAD` `Microsoft Entra ID` `IdentityGovernance` `RoleManagement`
