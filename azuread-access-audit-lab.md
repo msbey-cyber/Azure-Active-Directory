@@ -181,8 +181,9 @@ Disabled accounts assigned to admin roles are a critical findi
 ![descriptive alt text](./images/141.png)<br>
 5. Successful login will reflect on the PowerShell/CloudShell screen with a welcome message 
 ![descriptive alt text](./images/142.png)
-6. 
+6. Run the following command to generate a report of users and their assigned managers:
 ![descriptive alt text](./images/143.png)
+
 ![descriptive alt text](./images/144.png)
 ![descriptive alt text](./images/145.png)
 ![descriptive alt text](./images/146.png)
