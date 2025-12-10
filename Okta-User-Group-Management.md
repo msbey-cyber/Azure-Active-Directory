@@ -1,0 +1,112 @@
+# 🧭 Okta Administration Lab – User and Group Management
+
+This project demonstrates key day‑to‑day administrative tasks in **Okta**, including creating users, managing groups, resetting passwords, and disabling accounts.  
+It provides hands‑on practice managing identity lifecycle operations in Okta’s Admin Console.
+
+> Based on skills aligned with Okta Workforce Identity and Access Administration objectives.
+
+---
+
+## 🧰 Technologies Used
+- Okta Admin Console (Developer Tenant)  
+- Okta Directory Management  
+- Group and Access Assignments  
+- User Lifecycle Management (Activation, Password Reset, Suspension)  
+
+---
+
+## 🧠 Key Learning Objectives
+- Create and manage users in Okta Directory.  
+- Build and assign groups for role‑based access control.  
+- Reset or change user passwords securely.  
+- Suspend and reactivate user accounts to control access.  
+
+---
+
+# 🧩 Exercise 1 – Create a New User
+
+### **Task 1: Sign in to the Okta Admin Console**
+1. Go to `https://integrator-XXXXXXX-admin.okta.com` (Replace `XXXXXX` with your Okta domain ID).  
+2. Sign in using your Okta administrator credentials.
+
+### **Task 2: Create a User**
+1. In the left sidebar, navigate to **Directory → People**.  
+2. Click **Add Person** in the top‑right corner.  
+3. Fill in user details:  
+   - **First name:** Test  
+   - **Last name:** User  
+   - **Username:** `testuser@yourdomain.com`  
+   - **Primary email:** `testuser@yourdomain.com`  
+4. Under **Activation Options:**  
+   - Select **Activate now**.  
+   - Check **I will set password** and enter a temporary password.  
+5. Click **Save**.  
+
+### **Task 3: Verify User Creation**
+1. Return to **Directory → People**.  
+2. Search for `Test User` and verify the account appears with the correct attributes.
+
+---
+
+# 🧩 Exercise 2 – Create and Assign Groups
+
+### **Task 1: Create a Group**
+1. In the left menu, select **Directory → Groups**.  
+2. Click **Add Group**.  
+   - **Name:** `Engineering‑Team`  
+   - **Description:** `All engineering staff`  
+3. Click **Save**.
+
+### **Task 2: Add Members**
+1. With the new group open, click **Assign People**.  
+2. Search and select `Test User`.  
+3. Click **Assign**, then **Done**.  
+
+### **Task 3: Validate Group Membership**
+1. In **Directory → Groups**, search for `Engineering‑Team`.  
+2. Confirm that the group lists `Test User` as a member.
+
+---
+
+# 🧩 Exercise 3 – Reset a User Password
+
+### **Task 1: Issue a Password Reset**
+1. Navigate to **Directory → People** and click the user’s name (`Test User`).  
+2. Select **More Actions → Reset Password**.  
+3. Choose one of the following:  
+   - **Send email** – Okta emails the user a reset link.  
+   - **Generate temporary password** – creates and displays a temporary login password.  
+4. Communicate the reset details to the user as appropriate.
+
+### **Task 2: Validate Password Reset**
+1. Attempt to sign in as `Test User` using the old password → login fails.  
+2. Use the new temporary password or reset link → successfully sign in after reset.  
+
+---
+
+# 🧩 Exercise 4 – Suspend or Disable a User Account
+
+### **Task 1: Locate the User**
+1. Go to **Directory → People** and open `Test User`.
+
+### **Task 2: Suspend the User**
+1. Click **More Actions → Suspend**.  
+2. Confirm the suspension when prompted.  
+
+### **Task 3: Validate Suspension**
+1. Attempt to sign in as `Test User` → login fails with “Account disabled” message.  
+2. In the Okta Admin Console, check `Status = Suspended`.  
+
+> Note: Suspended users can be re‑enabled later using **More Actions → Unsuspend**.
+
+---
+
+## ✅ Conclusion
+
+This lab provided practical hands‑on experience with foundational **Okta administration tasks**. You created and managed users, established groups for access control, performed a secure password reset, and suspended a user account to simulate lifecycle offboarding. These activities demonstrated core skills for Identity and Access Management (IAM) administrators—including user provisioning, group‑based access, and account lifecycle governance—within the Okta Admin Console.
+
+---
+
+**Author:** *[Your Name]*  
+**Date:** *December 2025*  
+**Tags:** `Okta` `Identity & Access Management` `Lifecycle Governance` `User Administration` `Password Reset` `Group Management`
