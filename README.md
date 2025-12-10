@@ -1,6 +1,6 @@
 # 🧭 Identity and Access Management Labs Portfolio
 
-Welcome to my **Identity and Access Management (IAM)** Labs Portfolio — a collection of hands‑on projects demonstrating practical administration and security skills across enterprise identity platforms.  
+Welcome to my **Identity and Access Management (IAM)** Labs Portfolio — a collection of hands‑on projects demonstrating practical administration and security skills across enterprise identity<br>platforms.  
 Each lab shows how I implement, configure, and govern user access in different environments to support secure identity lifecycle<br>management.
 
 > Designed to reflect real‑world scenarios from Microsoft Entra ID (Azure AD) and Okta Workforce Identity platforms.
