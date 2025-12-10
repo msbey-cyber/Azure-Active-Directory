@@ -1,4 +1,4 @@
-# 📄 Building Audit‑Style Reports in Microsoft Entra ID (GUI Walkthrough)
+# 📄 Building Audit‑Style Reports in Microsoft Entra ID (GUI and PowerShell Walkthrough)
 
 A step‑by‑step guide for documenting user access, role changes, and orphaned accounts for compliance and governance.  
 
@@ -185,15 +185,15 @@ Disabled accounts assigned to admin roles are a critical findi
      ```powershell
       Connect-MgGraph -Scopes "User.ReadWrite.All"
       ```
-5. After running this command, I was prompted with the message **To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code B426889U2l to authenticate** (you must authenticate with a global administrator account). Enter the code provided in PowerShell after running the previous command, then enter your login credentials, enter the number provided from the login process to your Microsoft Authenticator app on your mobile device, then confirm you are trying to sign in to Microfost Graph Command Line Tools by clicking **Continue**. After logging in, a prompt will appear that you can close that tab out and return to the PowerShell terminal:
+4. After running this command, I was prompted with the message **To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code B426889U2l to authenticate** (you must authenticate with a global administrator account). Enter the code provided in PowerShell after running the previous command, then enter your login credentials, enter the number provided from the login process to your Microsoft Authenticator app on your mobile device, then confirm you are trying to sign in to Microfost Graph Command Line Tools by clicking **Continue**. After logging in, a prompt will appear that you can close that tab out and return to the PowerShell terminal:
 ![descriptive alt text](./images/137.png)
 ![descriptive alt text](./images/138.png)
 ![descriptive alt text](./images/139.png)
 ![descriptive alt text](./images/140.png)
 ![descriptive alt text](./images/141.png)<br>
-6. Successful login will reflect on the PowerShell/CloudShell screen with a welcome message 
+5. Successful login will reflect on the PowerShell/CloudShell screen with a welcome message 
 ![descriptive alt text](./images/142.png)
-7. Run the following command to generate a report of users and their assigned managers:
+6. Run the following command to generate a report of users and their assigned managers:
 ![descriptive alt text](./images/143.png)
    ```powershell
    $report = Get-MgUser -All -Property "id,displayName,userPrincipalName,accountEnabled" |
@@ -221,17 +221,17 @@ foreach ($role in $roles) {
 ```powershell
 $report | Measure-Object
 ```
-10. Check whether **Orphans** is empty. In this case, there are 14 accounts reporting as being orphaned.
+9. Check whether **Orphans** is empty. In this case, there are 14 accounts reporting as being orphaned.
 ![descriptive alt text](./images/146.png)
 ```powershell
 $orphans | Measure-Object
 ```
-11. Use the following command to filter the report and list only the accounts with no assigned manager. This helps identify orphaned accounts that may require follow-up.
+10. Use the following command to filter the report and list only the accounts with no assigned manager. This helps identify orphaned accounts that may require follow-up.
 ![descriptive alt text](./images/147.png)<br>
 ```powershell
 $report | Where-Object { -not $_.Manager } | Select-Object DisplayName,UserPrincipalName
 ```
-12. After identifying users without assigned managers, export the list to a CSV file and confirm the file was created successfully.
+11. After identifying users without assigned managers, export the list to a CSV file and confirm the file was created successfully.
 ![descriptive alt text](./images/148.png)
    - **Export the orphaned accounts to a CSV file:**
      ```powershell
