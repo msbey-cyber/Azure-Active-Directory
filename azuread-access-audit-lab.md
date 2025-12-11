@@ -262,32 +262,42 @@ Entra allows exporting several audit‑relevant CSVs.
 
 ### 🔹 4.1 Export Role Assignments
 **Steps**
-1. **Identity → Roles & administrators**  
-2. Click a role  
-3. Click **Download assignments**  
 
-📷 **Placeholder:**  
-![Export role assignments](images/export-role-assignments.png)
-
+1. **Entra ID → Roles & administrators → Click a role**
+![descriptive alt text](./images/151.png)  
+3. Click **Export**
+![descriptive alt text](./images/152.png) 
+4. Click **Download**
+![descriptive alt text](./images/153.png)  
+5. The built-in report will be downloaded to the local machine for review and to submit to auditors
+![descriptive alt text](./images/154.png)
 ---
 
 ### 🔹 4.2 Export Sign‑in Logs
 **Steps**
-1. **Identity → Monitoring → Sign‑in logs**  
-2. Click **Export → Choose CSV**  
 
-📷 **Placeholder:**  
-![Export sign‑in logs](images/export-signin-logs.png)
+1. **Entra ID → Monitoring → Sign‑in logs** 
+![descriptive alt text](./images/155.png)
+2. Click **Download → Download CSV**  
+![descriptive alt text](./images/156.png)
+3. Choose one or more of the files to the right to download depending on your task. The download will be based on the filter selection made.
+![descriptive alt text](./images/157.png)
+4. The sign-in logs will be downloaded to the local machine for review and to submit to auditors
+![descriptive alt text](./images/158.png)
+![descriptive alt text](./images/159.png)
 
 ---
 
 ### 🔹 4.3 Export Directory Audit Logs
 **Steps**
-1. **Identity → Monitoring → Audit logs**  
-2. Select **Download logs**  
 
-📷 **Placeholder:**  
-![Export audit logs](images/export-audit-logs.png)
+1. **Monitoring → Audit Logs**
+![descriptive alt text](./images/160.png)
+2. Click on **Download**, then when the window to the right of the screen appears, select **CSV** as the Format, enter the file name of the audit log to investigate in the **File Name** text box, then click **Download**
+![descriptive alt text](./images/161.png)
+3. The audit logs will be downloaded to the local machine for review and to submit to auditors
+![descriptive alt text](./images/162.png)
+![descriptive alt text](./images/163.png) 
 
 ---
 
@@ -297,16 +307,22 @@ Most compliance frameworks (SOX, SOC 2, ISO 27001, PCI) requir
 
 ### 🔹 5.1 Navigating Access Reviews
 **Steps**
-1. Go to **Identity Governance → Access Reviews**  
-2. Open an existing review or create a new one  
-3. Capture:  
-   - Review definition  
-   - Assigned reviewers  
-   - Review results  
-   - Users flagged for removal  
 
-📷 **Placeholder:**  
-![Access review evidence](images/access-review-results.png)
+1. Go to **Manage → Identity Governance**  
+![descriptive alt text](./images/164.png)
+2. **Access Reviews → Access Reviews**
+![descriptive alt text](./images/165.png)
+3. Open an existing review for investigation
+![descriptive alt text](./images/166.png)
+4. Capture:<br>
+   - Recurrence type
+   - Review type
+   - Reviewers
+   - Review Name
+   - Object id
+   - Description
+   - Review series status
+![descriptive alt text](./images/167.png)
 
 **Audit Value:**  
 Shows active governance and remediation workflows.
