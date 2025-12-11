@@ -226,6 +226,65 @@ Mastering OIDC demonstrates strong alignment with modern identity standards and 
 
 ---
 
+## 🔹 3 Assigning Access to the SAML-Based SSO Application
+
+A critical part of onboarding any new SAML application in Okta is ensuring that **only the correct users or groups have access**.  
+This enforces least‑privilege access control and ensures that only authorized users can authenticate through the new SSO integration.
+
+Below are additional steps you can include in the lab to demonstrate **assigning access to designated user groups**.
+
+---
+
+### 🔸 3.1 Assign the SAML Application to Specific User Groups
+
+1. After creating the SAML app, navigate to:  
+   **Applications → Applications**  
+   Next to your SAML app (**Test SAML App**), click the down arrow to the right of it and select **Assign to Groups**.  
+   ![Descriptive text](./images/181.png)
+
+2. A modal will appear listing available Okta groups. Select the appropriate groups:  
+   - **Engineering**  
+   - **Everyone**  
+   - **HR**  
+   - Or any other group required by your business use case  
+
+3. Click **Assign** next to each group.  
+   ![Descriptive text](./images/182.png)  
+   ![Descriptive text](./images/183.png)
+
+4. Scroll to the bottom of the page and click **Done**.  
+   ![Descriptive text](./images/184.png)
+
+5. Navigate back to **Applications → Applications**, then click on **Test SAML App**.  
+   ![Descriptive text](./images/185.png)
+
+6. Under the **Filters** section, click on **Groups**.  
+   The group(s) you selected should appear under the **Assignment** tab.  
+   You should now see your chosen groups listed as having access to the application.  
+   ![Descriptive text](./images/186.png)
+
+---
+
+## 🔍 Real‑World Importance
+
+Assigning group‑based access is essential for:
+
+- Enforcing **RBAC (Role-Based Access Control)**  
+- Preventing unauthorized users from accessing sensitive applications  
+- Maintaining consistent access control across onboarding/offboarding cycles  
+- Supporting audit requirements by demonstrating clearly defined access paths  
+
+In real IAM environments, app assignments are aligned with:
+
+- Job roles  
+- HR-driven workflows  
+- Identity lifecycle automation  
+- Access governance (IGA) reviews  
+
+Group‑based assignment ensures that application access is **predictable, auditable, and governed**, which is foundational to enterprise IAM operations.
+
+---
+
 ## Summary of Steps Taken in the Lab
 
 This lab walks through the complete process of configuring **SAML 2.0** and **OIDC (OpenID Connect)** applications in Okta which are two of the core protocols used in modern identity federation. These steps mirror the real‑world responsibilities of IAM analysts and IAM engineers when onboarding new applications into an organization's SSO platform.
