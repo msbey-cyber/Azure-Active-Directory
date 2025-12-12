@@ -507,15 +507,14 @@ This demonstrates that your organization has **active governance workflows**, re
 
 ---
 
-## 🟦 6. What This Manual Audit Demonstrates
+## Conclusion
 
-By following the steps above, this lab produces a complete set of evidence demonstrating:
+This lab provided an in‑depth, practical walkthrough of performing access audits within Microsoft Entra ID (formerly Azure Active Directory). You examined user access from multiple angles—directory roles, group memberships, and application assignments—to build a complete picture of how privileges are granted within the environment. You also analyzed role change activity through audit logs, identified orphaned and inactive accounts, and used Microsoft Graph PowerShell to generate detailed reporting on manager assignments and ownership gaps.
 
-✔ What access users have  
-✔ How roles are assigned, changed, and monitored  
-✔ Whether privileged or sensitive accounts are stale  
-✔ Whether orphaned accounts exist  
-✔ Whether governance and review workflows are active  
-✔ Exportable artifacts aligned with auditor expectations  
+By completing this lab, you demonstrated essential IAM analyst and engineer skills, including access review documentation, audit preparation, privilege analysis, and identity lifecycle validation. These are critical competencies for supporting compliance frameworks such as SOC 2, SOX, NIST, and ISO 27001. Overall, this lab showcases your ability to manually collect, interpret, and present identity governance evidence—mirroring the expectations of real enterprise access control audits.
 
-These manual steps complement automation tools by providing **visual, verifiable audit evidence** commonly required during access control assessments and compliance reviews.
+---
+
+**Author:** *Qadriyyah Abdullah [Ms Bey]*  
+**Date:** *December 2025*  
+**Tags:** `AzureAD` `MicrosoftEntraID` `AccessAudit` `IdentityGovernance` `PrivilegedAccess` `ComplianceReporting`
