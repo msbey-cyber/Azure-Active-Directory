@@ -178,14 +178,13 @@ The exercises demonstrate identity lifecycle management tasks including user cre
 3. Return to Entra ID → verify license is now present.
 ![descriptive alt text](./images/47.png)
 
-# ✅ Summary
-Completed Tasks
+---
 
-User creation (single via GUI and bulk via automation using PowerShell Graph modules)<br>
-Role assignment (in GUI and PowerShell) and revocation<br>
-Account deletion and restoration<br>
-License assignment via Microsoft 365 Admin Center<br>
-These steps implement core IAM governance concepts aligned with enterprise Identity & Access Administration best practices.
+## Conclusion
+
+This lab provided practical, hands-on experience with foundational Azure Active Directory (now Microsoft Entra ID) administration. You created and managed users, assigned licenses, configured groups, and applied role-based access control (RBAC) through directory roles. You also explored Azure AD security features such as conditional access, monitoring sign‑in activity, and reviewing audit logs to understand identity-related events.
+
+By completing these tasks, you gained exposure to the core responsibilities of identity and access management within a cloud environment, verifying the right users have the right access while maintaining security and compliance. This lab demonstrates essential skills for managing identities, enforcing governance, and supporting a secure Azure AD/Entra ID infrastructure in real-world enterprise environments.
 
 ---
 
