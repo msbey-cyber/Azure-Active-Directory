@@ -307,7 +307,7 @@ This verifies that policies, enrollment, and authentication requirements are fun
 
 ---
 
-## Conclusion
+## ✅ Conclusion
 
 This lab provided comprehensive hands-on experience configuring and enforcing Multi‑Factor Authentication (MFA) using Okta Verify within an enterprise identity environment. You enabled and configured secure authenticators, created MFA enrollment policies, and implemented sign‑on policies that enforce MFA requirements across applications. You also walked through the complete end‑user MFA enrollment experience and validated all authentication events through Okta System Logs.
 
